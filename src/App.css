@@ -1,0 +1,104 @@
+.container {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-editor {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 550px;
+  border: 1px solid rgb(19, 18, 18);
+}
+
+.item-editor--header {
+  display: flex;
+  padding: 10px;
+  background: darkgrey;
+  border-bottom: 1px solid rgb(19, 18, 18);
+}
+
+.item-editor--header > .title {
+  width: 50%;
+  color: #ffffff;
+}
+
+.item-editor--header > .actions {
+  display: flex;
+  width: 50%;
+}
+
+.item-editor--header > .actions > .btnWrap {
+  display: flex;
+  width: 50%;
+}
+
+.item-editor--header > .actions > .btnWrap > .btn {
+  margin: 0 5px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.item-editor--body {
+  display: flex;
+  height: 100%;
+}
+
+.item-editor--body__itemList {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 50%;
+  border-right: 1px solid rgb(19, 18, 18);
+}
+
+.item-editor--body__itemList > .item {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(19, 18, 18);
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.item-editor--body__itemList > .item-selected {
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+.item-editor--body__itemList > .item:focus {
+  outline: none;
+}
+
+.item-editor--body__fieldWrapper {
+  width: 100%;
+  max-height: 100%;
+  padding: 40px 30px;
+}
+
+#fieldsForm {
+  width: 100%;
+}
+
+#fieldsForm > .fieldContainer {
+  margin-bottom: 25px;
+}
+
+#fieldsForm > .fieldContainer > .field {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(19, 18, 18);
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+#fieldsForm > .fieldContainer > .field:focus {
+  outline: none;
+}
