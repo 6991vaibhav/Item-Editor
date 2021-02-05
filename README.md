@@ -10,7 +10,7 @@ Project Details:
 ## Usage
 
 // install node modules
-npm i
+```npm i
 
 // start the app
-npm start
+```npm start
