@@ -9,7 +9,6 @@ const ItemEditor = ({ data }) => {
   const [past, setPast] = useState([])
   const [future, setFuture] = useState([])
   const [present, setPresent] = useState({
-    type: 'selectItem',
     value: items[0]
   })
   const itemEditorRef = useRef()
@@ -21,7 +20,6 @@ const ItemEditor = ({ data }) => {
     setSelectedItem(itemId)
     setPast([...past, present])
     const presentData = {
-      type: 'selectItem',
       value: itemsDetails.items.find(item => item.id === itemId)
     }
     setPresent(presentData)
@@ -73,7 +71,6 @@ const ItemEditor = ({ data }) => {
           items: updatedInitialState
         })
         const newPresent = {
-          type: 'update',
           value: formData,
         }
         setPast([...past, present])
@@ -84,7 +81,6 @@ const ItemEditor = ({ data }) => {
         setItemsDetails(data)
         setPast([])
         setPresent({
-          type: 'selectItem',
           value: itemData
         })
         setFuture([])
